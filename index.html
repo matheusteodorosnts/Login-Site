@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="website icon" href="imgs/Photosite.png">
+</head>
+<body class="bg-stone-950 font-mono">
+    <div class="w-full h-[100vh] flex flex col justify-center items-center">
+        <div class="bg-stone-900 rounded w-96 min-h-[500px] shadow-2xl border-2 border-yellow-500">
+            <h1 class="text-yellow-500 text-2xl relative top-4 left-24 underline decoration-yellow-500"><b>Create Account</b></h1>
+            <form>
+                <label class="text-yellow-500 relative top-10 left-16">Name</label>
+                <input type="text" 
+                class="focus:outline-none focus:border-stone-900 text-zinc-400 bg-transparent rounded placeholder:italic relative  min-w-[245px] border-2 border-yellow-500 top-16 left-5" 
+                placeholder="examplename" 
+                id="inpcname">
+                <br>
+                <br>
+
+                <label class="text-yellow-500 relative top-14 left-16" name="password">Password</label>
+                <input type="password"
+                class="focus:outline-none focus:border-stone-900 text-zinc-400 bg-transparent rounded placeholder:italic relative min-w-[245px] border-2 border-yellow-500 top-20 right-4" 
+                placeholder="examplepassword" 
+                id="inptsenha"> 
+                <br>
+                <br>
+
+                <label class="text-yellow-500 relative top-20 left-16" name="e-mail">E-mail:</label>
+                <input type="email" 
+                id="inptemail"
+                class="focus:outline-none focus:border-stone-900 text-zinc-400 bg-transparent rounded placeholder:italic relative min-w-[245px] border-2 border-yellow-500 top-28 right-2" 
+                placeholder="example@gmail.com">
+                <p class="text-yellow-500 relative top-44 left-4 text-xl">By clicking on the button, you accept the <a href="">terms</a> and <a href="">conditions</a></p>
+                <button 
+                class="bg-yellow-500 text-white hover:bg-stone-900 hover:text-yellow-500 border-2 border-yellow-500 rounded transition ease-in-out delay-100 p-3 w-60 relative top-44 left-16" 
+                id="btncreate">Create Account</button> 
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
